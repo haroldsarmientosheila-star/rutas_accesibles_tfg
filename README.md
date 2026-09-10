@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 # rutas_accesibles_tfg
-=======
+
 # Proyecto CORUEDAS
 
 Prototipo de aplicación (MPV) para calcular rutas más accesibles para personas usuarias de silla de ruedas en el casco histórico de Arucas (Gran Canaria).
