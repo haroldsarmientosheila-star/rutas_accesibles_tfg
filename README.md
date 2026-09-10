@@ -2,7 +2,7 @@
 
 # Rutas accesibles · Arucas
 
-Prototipo de aplicación web progresiva (PWA) desarrollado como parte del Trabajo de Fin de Grado en Ingeniería de Sistemas de Telecomunicación, Sonido e Imagen, elaborado por Sheila Harold Sarmiento
+Prototipo de aplicación web progresiva (PWA) desarrollado como parte del Trabajo de Fin de Grado en Ingeniería de Sistemas de Telecomunicación, Sonido e Imagen, elaborado por Sheila Harold Sarmiento.
 
 La aplicación permite calcular y comparar dos recorridos peatonales dentro de la zona digitalizada de Arucas:
 
@@ -56,7 +56,7 @@ La aplicación aparecerá en el dispositivo con su propio icono y podrá abrirse
 5. Ambas rutas se representan sobre el mapa junto con su distancia.
 6. El botón **Nueva ruta** permite reiniciar la selección.
 
-Para facilitar la comprobación del funcionamiento del prototipo y la verificación de las rutas calculadas, se recomienda realizar las pruebas en el entorno de la **plaza de San Juan**, dentro de la zona digitalizada.
+> Para facilitar la comprobación del funcionamiento del prototipo y la verificación de las rutas calculadas, se recomienda realizar las pruebas en el entorno de la **plaza de San Juan**, dentro de la zona digitalizada.
 
 ---
 
