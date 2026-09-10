@@ -7,7 +7,4 @@ Prototipo de aplicación (MPV) para calcular rutas más accesibles para personas
 
 En este repositorio se reunen los datos, la documentación y el código desarrollados para la realización del Trabajo de Fin de Grado en Ingeniería de Sistemas de Telecomunicación, Sonido e Imagen, elaborado por Sheila Harold Sarmiento.
 
-## Estado actual
-
-22/07 Preparación inicial de la estructura y repositorio del proyecto. Transcripción de los datos recogidos en campo.
->>>>>>> fc238ff (Descripción inicial del proyecto)
+## 
