@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Sheila Harold Sarmiento - TFG Ingeniería de Sistemas de Telecomunicaciones, Sonido e Imagen 2026-->
+<html lang="es">
+
+<head>
+    <link rel="manifest" href="/manifest.json">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rutas accesibles · Arucas</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <header class="cabecera">
+
+        <div class="logo-titulo">
+
+            <img src="/static/icons/icon-192.png" alt="" class="logo">
+
+            <div class="nombre-app">
+                <h1>Rutas accesibles</h1>
+                <span class="localizacion">Arucas</span>
+            </div>
+
+        </div>
+
+
+        <div class="info-tfg">
+
+            <div class="creditos">
+
+                <p class="autoria">
+                    Sheila Harold Sarmiento
+                </p>
+
+                <p class="carrera">
+                    Prototipo Trabajo de Fin de Grado 2026 · Ingeniería de Sistemas
+                    de Telecomunicaciones, Sonido e Imagen
+                </p>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="contenedor-mapa">
+
+        <div id="mapa"></div>
+
+        <button id="nueva-ruta">
+            Nueva ruta
+        </button>
+
+        <div id="resultados"></div>
+
+        <div class="leyenda-rutas">
+            <div class="leyenda-titulo">Leyenda</div>
+
+            <div class="leyenda-item">
+                <span class="linea-leyenda corta"></span>
+                <span>Ruta más corta</span>
+            </div>
+
+            <div class="leyenda-item">
+                <span class="linea-leyenda accesible"></span>
+                <span>Ruta accesible</span>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-polylineoffset/leaflet.polylineoffset.js"></script>
+
+    <script src="{{ url_for('static', filename='js/mapa.js') }}"></script>
+
+</body>
+
+</html>

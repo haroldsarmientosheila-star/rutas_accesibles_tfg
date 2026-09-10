@@ -1,0 +1,228 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABECERA */
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 14px 24px;
+
+    background-color: white;
+    border-bottom: 1px solid #dddddd;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* Logo y título */
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+}
+
+.nombre-app h1 {
+    margin: 0;
+
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.localizacion {
+    display: block;
+
+    margin-top: 3px;
+
+    color: #38745e;
+    font-size: 13px;
+}
+
+
+/* Información del TFG */
+
+.info-tfg {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.creditos {
+    text-align: right;
+}
+
+.autoria {
+    margin: 0;
+
+    font-size: 13px;
+}
+
+.carrera {
+    margin: 4px 0 0;
+
+    color: #666666;
+    font-size: 11px;
+}
+
+
+/* Pantallas pequeñas */
+
+@media (max-width: 700px) {
+
+ .app-header {
+        padding: 14px 18px 12px;
+        gap: 10px;
+    }
+
+    .app-logo-titulo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .app-logo {
+        width: 72px;
+        height: 72px;
+        flex-shrink: 0;
+    }
+
+    .app-nombre h1 {
+        font-size: 2rem;
+        line-height: 1.05;
+        margin: 0;
+    }
+
+    .app-localizacion {
+        font-size: 1.15rem;
+    }
+
+    .app-info {
+        width: 100%;
+        text-align: left;
+        margin: 0;
+    }
+
+    .app-autoria {
+        font-size: 1rem;
+        margin: 0 0 2px;
+    }
+
+    .app-carrera {
+        font-size: 0.82rem;
+        line-height: 1.2;
+        margin: 0;
+        max-width: none;
+    }
+}
+
+#contenedor-mapa {
+    flex: 1;
+    position: relative;
+    min-height: 0;
+}
+
+#mapa {
+    height: 100%;
+}
+
+#nueva-ruta {
+    position: absolute;
+    top: 98px;
+    right: 10px;
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+    padding: 10px 16px;
+    border: none;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+#resultados {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 3000;
+
+    background-color: white;
+    color: black;
+    font-family: Verdana;
+    font-size: 18px;
+
+
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+
+/* leyenda */
+
+
+.leyenda-rutas {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    z-index: 1000;
+
+    background: rgba(255, 255, 255, 0.95);
+    padding: 10px 12px;
+
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.25);
+
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.leyenda-titulo {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.leyenda-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0;
+}
+
+.linea-leyenda {
+    display: inline-block;
+    width: 28px;
+    height: 4px;
+    border-radius: 3px;
+}
+
+.linea-leyenda.corta {
+    background: red;
+}
+
+.linea-leyenda.accesible {
+    background: green;
+}
