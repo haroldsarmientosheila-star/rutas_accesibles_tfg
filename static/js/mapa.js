@@ -141,23 +141,3 @@ if ("serviceWorker" in navigator) {
         });
 
 }
-
-let eventoInstalacion;
-
-window.addEventListener("beforeinstallprompt", (e) => {
-    e.preventDefault();
-    eventoInstalacion = e;
-
-    document.getElementById("instalar-app").style.display = "block";
-});
-
-document.getElementById("instalar-app").addEventListener("click", async () => {
-    if (!eventoInstalacion) return;
-
-    eventoInstalacion.prompt();
-
-    await eventoInstalacion.userChoice;
-
-    eventoInstalacion = null;
-    document.getElementById("instalar-app").style.display = "none";
-});
